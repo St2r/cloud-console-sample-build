@@ -17,14 +17,14 @@
 # tag it with the name of the image.
 steps:
 - name: 'docker'
-  args: [ 'build', '-t', 'asia-east2-docker.pkg.dev/$PROJECT_ID/test', '.' ]
+  args: [ 'build', '-t', 'asia-east2-docker.pkg.dev/$PROJECT_ID/test/test2', '.' ]
 
 # By default, all built docker images will be lost once the build is complete.
 # Rather than writing a build step to push this image, you can simply list the
 # image below and it will automatically be uploaded to Google Cloud Container
 # Registry.
 images:
-- 'asia-east2-docker.pkg.dev/$PROJECT_ID/test'
+- 'asia-east2-docker.pkg.dev/$PROJECT_ID/test/test2'
 
 # You can organize your builds with tags
 tags: ['latest']
